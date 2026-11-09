@@ -1,0 +1,21 @@
+{
+  "name": "ember-ascent",
+  "version": "1.0.0",
+  "description": "Ember Ascent",
+  "author": "Ember Ascent",
+  "main": "main.js",
+  "private": true,
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.emberascent.game",
+    "productName": "Ember Ascent",
+    "files": ["main.js", "index.html"],
+    "win": {
+      "target": "portable",
+      "artifactName": "Ember-Ascent.exe"
+    }
+  }
+}
