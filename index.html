@@ -254,7 +254,7 @@ function setBtn(name,down){
   input[name]=down;
 }
 var KEYMAP={ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r',ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d'};
-var BTNKEY={KeyZ:'jump',Space:'jump',KeyK:'jump',KeyX:'dash',KeyJ:'dash',KeyC:'grab',ShiftLeft:'grab',ShiftRight:'grab'};
+var BTNKEY={KeyZ:'jump',Space:'jump',KeyK:'jump',KeyE:'dash',KeyX:'dash',KeyJ:'dash',KeyQ:'grab',KeyC:'grab',ShiftLeft:'grab',ShiftRight:'grab'};
 window.addEventListener('keydown',function(e){
   if(e.repeat){if(KEYMAP[e.code]||BTNKEY[e.code])e.preventDefault();return;}
   ensureAudio();
@@ -722,7 +722,7 @@ function titleScreen(){
     '<h1>EMBER<br><span>ASCENT</span></h1>'+
     '<p>Climb, dash and cling your way up to the sunrise. Falling is part of the route, so fall as often as you need.</p>'+
     '<button class="primary" data-a="start">Start climbing</button>'+
-    '<div class="keys">Touch: stick to move, then JUMP, DASH and GRAB.<br>Keyboard: arrows or WASD, Z jump, X dash, C grab, F fullscreen, P pause. Gamepad works too.</div>'+rec+'</div>');
+    '<div class="keys">Touch: stick to move, then JUMP, DASH and GRAB.<br>Keyboard: arrows or WASD, Space or Z jump, E dash, Q grab, F fullscreen, P pause. Gamepad works too.</div>'+rec+'</div>');
 }
 function winScreen(){
   mode='win';
